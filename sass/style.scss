@@ -1,0 +1,52 @@
+@import 'variables';
+
+body {
+  background-color: $bg;
+  color: $text;
+  font-family: Arial, sans-serif;
+
+  header {
+    background: $primary;
+    padding: 1rem;
+
+    h1 {
+      margin: 0;
+      color: $text;
+    }
+
+    nav {
+      margin-top: 0.5rem;
+
+      a {
+        color: $text;
+        margin-right: 15px;
+        text-decoration: none;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+
+  .peliculas {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+
+    .pelicula {
+      border: 1px solid $accent;
+      padding: 10px;
+      background: #222;
+
+      img {
+        width: 100px;
+        height: auto;
+      }
+
+      h3 {
+        color: $accent;
+      }
+    }
+  }
+}
